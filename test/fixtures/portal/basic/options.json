@@ -1,0 +1,12 @@
+{
+	"plugins": [
+		[
+			"portal",
+			{
+				"portals": [
+					"create-fetcher.js"
+				]
+			}
+		]
+	]
+}

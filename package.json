@@ -1,0 +1,40 @@
+{
+	"name": "babel-plugin-portal",
+	"version": "0.1.0",
+	"description": "",
+	"license": "MIT",
+	"repository": "twotwentythree/babel-plugin-portal",
+	"author": {
+		"name": "Thomas Sileghem",
+		"email": "th.sileghem@gmail.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"build": "babel --out-dir dist -x .ts  src",
+		"link": "npm link && npm link babel-plugin-portal",
+		"test": "xo && jest test/index.js"
+	},
+	"files": [
+		"index.js",
+		"dist"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {
+		"core-js": "^3.6.5"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.9.0",
+		"@babel/helper-plugin-test-runner": "^7.8.3",
+		"@babel/preset-env": "^7.9.5",
+		"@babel/preset-typescript": "^7.9.0",
+		"@types/jest": "^25.2.1",
+		"jest": "^25.3.0",
+		"ts-jest": "^25.4.0",
+		"xo": "^0.24.0"
+	}
+}
